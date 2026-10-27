@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@color/uhc_navy" android:paddingStart="22dp" android:paddingEnd="22dp" android:paddingTop="18dp" android:paddingBottom="17dp">
+ <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="UHC" android:textColor="@android:color/white" android:textStyle="bold" android:textSize="22sp"/>
+ <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="UGANDA HEALTH CONNECT" android:textColor="#E8EEF4" android:textStyle="bold" android:textSize="10sp" android:letterSpacing="0.04"/>
+</LinearLayout>

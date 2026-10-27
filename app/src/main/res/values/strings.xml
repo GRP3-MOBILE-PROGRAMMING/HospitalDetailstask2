@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">UHC — Uganda Health Connect</string>
+    <string name="brand_name">UHC</string>
+    <string name="brand_subtitle">UGANDA HEALTH CONNECT</string>
+    <string name="tagline">Connecting Healthcare, Improving Lives</string>
+    <string name="patient_directory">Patient directory</string>
+    <string name="patient_record">Patient record</string>
+    <string name="search_hint">Search name or patient ID</string>
+</resources>

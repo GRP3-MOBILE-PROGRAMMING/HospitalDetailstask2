@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@color/uhc_background" tools:context=".MainActivity">
+ <include layout="@layout/uhc_header"/>
+ <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:orientation="horizontal">
+  <androidx.fragment.app.FragmentContainerView android:id="@+id/list_container" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.9" tools:layout="@layout/fragment_patient_list"/>
+  <View android:layout_width="1dp" android:layout_height="match_parent" android:background="@color/uhc_border"/>
+  <androidx.fragment.app.FragmentContainerView android:id="@+id/detail_container" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1.5" tools:layout="@layout/fragment_patient_detail"/>
+ </LinearLayout>
+</LinearLayout>

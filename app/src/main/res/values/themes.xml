@@ -1,0 +1,11 @@
+<resources>
+
+    <style name="Base.Theme.HospitalDetails" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+    <style name="Theme.HospitalDetails" parent="Base.Theme.HospitalDetails">
+        <!-- API 31+ splash screen attributes are moved to values-v31/themes.xml -->
+    </style>
+
+</resources>

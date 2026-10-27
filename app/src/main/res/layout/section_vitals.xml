@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginTop="24dp">
+ <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Latest vital signs" android:textColor="@color/uhc_text" android:textSize="16sp" android:textStyle="bold"/>
+ <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="5dp" android:background="@color/uhc_border"/>
+ <TextView android:id="@+id/detail_vitals" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:text="Blood pressure: 138/88 mmHg
+Pulse: 78 bpm  ·  Temperature: 36.8 °C" android:textColor="@color/uhc_muted" android:textSize="13sp"/>
+</LinearLayout>

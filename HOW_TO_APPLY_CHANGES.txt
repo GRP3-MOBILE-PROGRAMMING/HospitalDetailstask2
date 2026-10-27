@@ -1,0 +1,22 @@
+UHC / HospitalDetails layout correction
+
+This ZIP contains your updated Android Studio project. It is based on the HospitalDetails project you sent.
+
+WHAT WAS UPDATED
+- Phone XML layouts now follow the Patient Directory and Patient Record wireframes.
+- layout-sw600dp has a tablet two-pane layout.
+- Added a reusable patient-card XML layout and section layouts.
+- Added three generated sample patient portraits in app/src/main/res/drawable-nodpi.
+- Updated the small amount of Java needed to inflate the XML patient cards and populate the detail screen. This is necessary because the original PatientListFragment created plain TextViews in Java; XML alone could not change those dynamically-created cards into the designed cards.
+
+HOW TO USE IT SAFELY
+1. Close Android Studio, or at least stop the running app.
+2. Keep your existing project as a backup. Do not delete it. Rename the existing HospitalDetails folder to HospitalDetails_BACKUP if you want to preserve it.
+3. Extract this ZIP. Open the HospitalDetails folder inside the extracted folder in Android Studio (File > Open).
+4. Wait for Gradle sync to finish. If Android Studio asks to trust the project, trust your own project.
+5. Run the app on your emulator. Test the directory, tap Sarah/John/Amina, and use Back on phone layout. If the emulator is a tablet-sized device (600dp or wider), the two panes should appear side by side.
+6. If it runs correctly, copy these changed files into your original working project OR use this extracted project as the working copy. Do not copy the outer ZIP itself into Android Studio.
+7. In Git, inspect changes first with `git status`, then `git add app/src/main/res app/src/main/java/com/example/hospitaldetails/MainActivity.java app/src/main/java/com/example/hospitaldetails/PatientListFragment.java app/src/main/java/com/example/hospitaldetails/PatientDetailFragment.java`, then `git commit -m "Update UHC patient layouts to match wireframes"`, then `git push`. Run these commands from the project root that contains the `.git` folder.
+
+NOTE
+The portraits are generated sample illustrations/portraits for a school prototype, not real patient photos. The medical details are fictional demonstration data and must not be used as real medical records.

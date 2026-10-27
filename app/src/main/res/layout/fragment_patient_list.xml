@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@color/uhc_background">
+ <include layout="@layout/uhc_header"/>
+ <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:fillViewport="true">
+  <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingStart="22dp" android:paddingEnd="22dp" android:paddingTop="22dp" android:paddingBottom="16dp">
+   <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Patient directory" android:textColor="@color/uhc_text" android:textSize="25sp" android:textStyle="bold"/>
+   <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="Search and select a patient to view their record." android:textColor="@color/uhc_muted" android:textSize="14sp"/>
+   <EditText android:id="@+id/search_field" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginTop="22dp" android:paddingStart="16dp" android:paddingEnd="16dp" android:background="@drawable/uhc_search" android:hint="Search name or patient ID" android:singleLine="true" android:inputType="text" android:textColor="@color/uhc_text" android:textColorHint="@color/uhc_muted" android:textSize="14sp"/>
+   <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:layout_marginBottom="12dp" android:text="RECENT PATIENTS  ·  3 RECORDS" android:textColor="@color/uhc_text" android:textStyle="bold" android:textSize="12sp"/>
+   <LinearLayout android:id="@+id/patient_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"/>
+  </LinearLayout>
+ </ScrollView>
+ <LinearLayout android:layout_width="match_parent" android:layout_height="64dp" android:orientation="horizontal" android:gravity="center" android:background="#FFFFFF" android:showDividers="middle" android:dividerPadding="10dp">
+  <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="center" android:text="Patients" android:textColor="@color/uhc_navy" android:textStyle="bold" android:textSize="13sp"/>
+  <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="center" android:text="Visits" android:textColor="@color/uhc_muted" android:textSize="13sp"/>
+  <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="center" android:text="Profile" android:textColor="@color/uhc_muted" android:textSize="13sp"/>
+ </LinearLayout>
+</LinearLayout>
