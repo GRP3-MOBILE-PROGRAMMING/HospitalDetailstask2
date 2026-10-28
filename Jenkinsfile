@@ -2,7 +2,8 @@
 // Lint gate -> build -> unit tests -> archive APK. Any lint error fails the build.
 
 
-def gradle(String tasks) {
+// Named runGradle because the Gradle plugin already provides a 'gradle' step.
+def runGradle(String tasks) {
     if (isUnix()) {
         sh "./gradlew ${tasks} --stacktrace"
     } else {
@@ -14,7 +15,7 @@ pipeline {
     agent any
 
     tools {
-        jdk 'jdk21'   
+        jdk 'jdk21'
     }
 
     options {
@@ -25,8 +26,8 @@ pipeline {
     }
 
     triggers {
-        githubPush()              /
-        pollSCM('H/5 * * * *')    
+        githubPush()              // build on every GitHub webhook push
+        pollSCM('H/5 * * * *')    // fallback if the webhook misses a push
     }
 
     environment {
@@ -47,26 +48,26 @@ pipeline {
 
         stage('Lint rule tests') {
             steps {
-                gradle(':lint-checks:test')
+                runGradle(':lint-checks:test')
             }
         }
 
         stage('Lint gate') {
             steps {
                 // abortOnError = true in app/build.gradle.kts, so errors fail this stage
-                gradle(':app:lintDebug')
+                runGradle(':app:lintDebug')
             }
         }
 
         stage('Build') {
             steps {
-                gradle(':app:assembleDebug')
+                runGradle(':app:assembleDebug')
             }
         }
 
         stage('Unit tests') {
             steps {
-                gradle(':app:testDebugUnitTest')
+                runGradle(':app:testDebugUnitTest')
             }
         }
 
