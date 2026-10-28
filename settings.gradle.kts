@@ -24,4 +24,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "HospitalDetails"
 include(":app")
+include(":lint-checks")
  
