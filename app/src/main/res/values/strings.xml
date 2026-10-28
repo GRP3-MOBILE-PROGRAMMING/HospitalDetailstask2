@@ -1,4 +1,5 @@
 <resources>
+
     <string name="app_name">UHC — Uganda Health Connect</string>
     <string name="brand_name">UHC</string>
     <string name="brand_subtitle">UGANDA HEALTH CONNECT</string>
@@ -6,4 +7,12 @@
     <string name="patient_directory">Patient directory</string>
     <string name="patient_record">Patient record</string>
     <string name="search_hint">Search name or patient ID</string>
+
+    <plurals name="patient_count">
+        <item quantity="one">RECENT PATIENTS · %1$d RECORD</item>
+        <item quantity="other">RECENT PATIENTS · %1$d RECORDS</item>
+    </plurals>
+    <string name="no_patients_found">No patients match your search.</string>
+    <string name="full_record_close">Close</string>
+
 </resources>
