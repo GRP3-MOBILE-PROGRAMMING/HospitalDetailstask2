@@ -1,0 +1,1073 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="6" by="lint 9.0.0" type="baseline" client="gradle" dependencies="true" name="AGP (9.0.0)" variant="all" version="9.0.0">
+
+    <issue
+        id="UhcViewAccessAfterDestroyView"
+        message="View field `patientList` is not cleared in `onDestroyView()`; set it to null there or look the view up from `getView()` when needed"
+        errorLine1="    private LinearLayout patientList;"
+        errorLine2="                         ~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/hospitaldetails/PatientListFragment.java"
+            line="25"
+            column="26"/>
+    </issue>
+
+    <issue
+        id="UhcViewAccessAfterDestroyView"
+        message="View field `countLabel` is not cleared in `onDestroyView()`; set it to null there or look the view up from `getView()` when needed"
+        errorLine1="    private TextView countLabel;"
+        errorLine2="                     ~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/hospitaldetails/PatientListFragment.java"
+            line="26"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="InconsistentLayout"
+        message="The id &quot;fragment_container&quot; in layout &quot;activity_main&quot; is missing from the following layout configurations: layout-sw600dp (present in layout)"
+        errorLine1="&lt;androidx.fragment.app.FragmentContainerView xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; xmlns:tools=&quot;http://schemas.android.com/tools&quot; android:id=&quot;@+id/fragment_container&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;match_parent&quot; android:background=&quot;@color/uhc_background&quot; tools:context=&quot;.MainActivity&quot; tools:layout=&quot;@layout/fragment_patient_list&quot; />"
+        errorLine2="                                                                                                                                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="2"
+            column="152"
+            message="Occurrence in layout"/>
+    </issue>
+
+    <issue
+        id="InconsistentLayout"
+        message="The id &quot;list_container&quot; in layout &quot;activity_main&quot; is missing from the following layout configurations: layout (present in layout-sw600dp)"
+        errorLine1="  &lt;androidx.fragment.app.FragmentContainerView android:id=&quot;@+id/list_container&quot; android:layout_width=&quot;0dp&quot; android:layout_height=&quot;match_parent&quot; android:layout_weight=&quot;0.9&quot; tools:layout=&quot;@layout/fragment_patient_list&quot;/>"
+        errorLine2="                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout-sw600dp/activity_main.xml"
+            line="5"
+            column="48"
+            message="Occurrence in layout-sw600dp"/>
+    </issue>
+
+    <issue
+        id="InconsistentLayout"
+        message="The id &quot;detail_container&quot; in layout &quot;activity_main&quot; is missing from the following layout configurations: layout (present in layout-sw600dp)"
+        errorLine1="  &lt;androidx.fragment.app.FragmentContainerView android:id=&quot;@+id/detail_container&quot; android:layout_width=&quot;0dp&quot; android:layout_height=&quot;match_parent&quot; android:layout_weight=&quot;1.5&quot; tools:layout=&quot;@layout/fragment_patient_detail&quot;/>"
+        errorLine2="                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout-sw600dp/activity_main.xml"
+            line="7"
+            column="48"
+            message="Occurrence in layout-sw600dp"/>
+    </issue>
+
+    <issue
+        id="UnusedAttribute"
+        message="Attribute `clipToOutline` is only used in API level 31 and higher (current min is 24)"
+        errorLine1="    &lt;ImageView android:id=&quot;@+id/detail_photo&quot; android:layout_width=&quot;88dp&quot; android:layout_height=&quot;88dp&quot; android:layout_marginStart=&quot;12dp&quot; android:background=&quot;@drawable/uhc_avatar_outline&quot; android:clipToOutline=&quot;true&quot; android:scaleType=&quot;centerCrop&quot; android:contentDescription=&quot;Patient portrait&quot;/>"
+        errorLine2="                                                                                                                                                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout-sw600dp/fragment_patient_detail.xml"
+            line="10"
+            column="188"/>
+    </issue>
+
+    <issue
+        id="UnusedAttribute"
+        message="Attribute `clipToOutline` is only used in API level 31 and higher (current min is 24)"
+        errorLine1="    &lt;ImageView android:id=&quot;@+id/detail_photo&quot; android:layout_width=&quot;88dp&quot; android:layout_height=&quot;88dp&quot; android:layout_marginStart=&quot;12dp&quot; android:background=&quot;@drawable/uhc_avatar_outline&quot; android:clipToOutline=&quot;true&quot; android:scaleType=&quot;centerCrop&quot; android:contentDescription=&quot;Patient portrait&quot;/>"
+        errorLine2="                                                                                                                                                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_patient_detail.xml"
+            line="11"
+            column="188"/>
+    </issue>
+
+    <issue
+        id="UnusedAttribute"
+        message="Attribute `clipToOutline` is only used in API level 31 and higher (current min is 24)"
+        errorLine1="  &lt;ImageView android:id=&quot;@+id/patient_photo&quot; android:layout_width=&quot;48dp&quot; android:layout_height=&quot;48dp&quot; android:scaleType=&quot;centerCrop&quot; android:contentDescription=&quot;Patient portrait&quot; android:background=&quot;@drawable/uhc_avatar_outline&quot; android:clipToOutline=&quot;true&quot;/>"
+        errorLine2="                                                                                                                                                                                                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/item_patient.xml"
+            line="4"
+            column="230"/>
+    </issue>
+
+    <issue
+        id="CustomSplashScreen"
+        message="The application should not provide its own launch screen"
+        errorLine1="public class SplashActivity extends AppCompatActivity {"
+        errorLine2="             ~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/hospitaldetails/SplashActivity.java"
+            line="10"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="AndroidGradlePluginVersion"
+        message="A newer version of com.android.application than 9.0.0 is available: 9.5.0. (There is also a newer version of 9.0.𝑥 available, if upgrading to 9.5.0 is difficult: 9.0.1)"
+        errorLine1="agp = &quot;9.0.0&quot;"
+        errorLine2="      ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="2"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="AndroidGradlePluginVersion"
+        message="A newer version of com.android.lint than 9.0.0 is available: 9.5.0. (There is also a newer version of 9.0.𝑥 available, if upgrading to 9.5.0 is difficult: 9.0.1)"
+        errorLine1="agp = &quot;9.0.0&quot;"
+        errorLine2="      ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="2"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.lifecycle:lifecycle-viewmodel than 2.9.0 is available: 2.11.0"
+        errorLine1="    implementation(&quot;androidx.lifecycle:lifecycle-viewmodel:2.9.0&quot;)"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle.kts"
+            line="66"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.lifecycle:lifecycle-livedata than 2.9.0 is available: 2.11.0"
+        errorLine1="    implementation(&quot;androidx.lifecycle:lifecycle-livedata:2.9.0&quot;)"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle.kts"
+            line="67"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of com.android.tools.lint:lint-api than 32.0.0 is available: 32.5.0"
+        errorLine1="lint = &quot;32.0.0&quot;"
+        errorLine2="       ~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="4"
+            column="8"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of com.android.tools.lint:lint-checks than 32.0.0 is available: 32.5.0"
+        errorLine1="lint = &quot;32.0.0&quot;"
+        errorLine2="       ~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="4"
+            column="8"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of com.android.tools.lint:lint-tests than 32.0.0 is available: 32.5.0"
+        errorLine1="lint = &quot;32.0.0&quot;"
+        errorLine2="       ~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="4"
+            column="8"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.appcompat:appcompat than 1.7.1 is available: 1.8.0"
+        errorLine1="appcompat = &quot;1.7.1&quot;"
+        errorLine2="            ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="9"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of com.google.android.material:material than 1.13.0 is available: 1.14.0"
+        errorLine1="material = &quot;1.13.0&quot;"
+        errorLine2="           ~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="10"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.constraintlayout:constraintlayout than 2.2.1 is available: 2.2.2"
+        errorLine1="constraintlayout = &quot;2.2.1&quot;"
+        errorLine2="                   ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="12"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.fragment:fragment than 1.8.9 is available: 1.9.1"
+        errorLine1="fragment = &quot;1.8.9&quot;"
+        errorLine2="           ~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="13"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="NewerVersionAvailable"
+        message="A newer version of org.jetbrains.kotlin.jvm than 2.2.10 is available: 2.4.21"
+        errorLine1="kotlin = &quot;2.2.10&quot;"
+        errorLine2="         ~~~~~~~~">
+        <location
+            file="../gradle/libs.versions.toml"
+            line="5"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="DiscouragedApi"
+        message="Use of this function is discouraged because resource reflection makes it harder to perform build optimizations and compile-time verification of code. It is much more efficient to retrieve resources by identifier (e.g. `R.foo.bar`) than by name (e.g. `getIdentifier(&quot;bar&quot;, &quot;foo&quot;, null)`)."
+        errorLine1="        int imageRes = getResources().getIdentifier("
+        errorLine2="                                      ~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/hospitaldetails/PatientDetailFragment.java"
+            line="52"
+            column="39"/>
+    </issue>
+
+    <issue
+        id="DiscouragedApi"
+        message="Use of this function is discouraged because resource reflection makes it harder to perform build optimizations and compile-time verification of code. It is much more efficient to retrieve resources by identifier (e.g. `R.foo.bar`) than by name (e.g. `getIdentifier(&quot;bar&quot;, &quot;foo&quot;, null)`)."
+        errorLine1="            int imageRes = getResources().getIdentifier("
+        errorLine2="                                          ~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/hospitaldetails/PatientListFragment.java"
+            line="85"
+            column="43"/>
+    </issue>
+
+    <issue
+        id="DisableBaselineAlignment"
+        message="Set `android:baselineAligned=&quot;false&quot;` on this element for better performance"
+        errorLine1="   &lt;LinearLayout android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;96dp&quot; android:layout_marginTop=&quot;8dp&quot; android:padding=&quot;16dp&quot; android:orientation=&quot;horizontal&quot; android:background=&quot;@drawable/uhc_summary&quot;>"
+        errorLine2="    ~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout-sw600dp/fragment_patient_detail.xml"
+            line="14"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="DisableBaselineAlignment"
+        message="Set `android:baselineAligned=&quot;false&quot;` on this element for better performance"
+        errorLine1="   &lt;LinearLayout android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;96dp&quot; android:layout_marginTop=&quot;8dp&quot; android:padding=&quot;16dp&quot; android:orientation=&quot;horizontal&quot; android:background=&quot;@drawable/uhc_summary&quot;>"
+        errorLine2="    ~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_patient_detail.xml"
+            line="15"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="NestedWeights"
+        message="Nested weights are bad for performance"
+        errorLine1="  &lt;androidx.fragment.app.FragmentContainerView android:id=&quot;@+id/list_container&quot; android:layout_width=&quot;0dp&quot; android:layout_height=&quot;match_parent&quot; android:layout_weight=&quot;0.9&quot; tools:layout=&quot;@layout/fragment_patient_list&quot;/>"
+        errorLine2="                                                                                                                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout-sw600dp/activity_main.xml"
+            line="5"
+            column="145"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        message="Possible overdraw: Root element paints background `@color/uhc_background` with a theme that also paints a background (inferred theme is `@style/Theme.HospitalDetails`)"
+        errorLine1="&lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; xmlns:tools=&quot;http://schemas.android.com/tools&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;match_parent&quot; android:orientation=&quot;vertical&quot; android:background=&quot;@color/uhc_background&quot; tools:context=&quot;.MainActivity&quot;>"
+        errorLine2="                                                                                                                                                                                                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout-sw600dp/activity_main.xml"
+            line="2"
+            column="225"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        message="Possible overdraw: Root element paints background `@color/uhc_background` with a theme that also paints a background (inferred theme is `@style/Theme.HospitalDetails`)"
+        errorLine1="&lt;androidx.fragment.app.FragmentContainerView xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; xmlns:tools=&quot;http://schemas.android.com/tools&quot; android:id=&quot;@+id/fragment_container&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;match_parent&quot; android:background=&quot;@color/uhc_background&quot; tools:context=&quot;.MainActivity&quot; tools:layout=&quot;@layout/fragment_patient_list&quot; />"
+        errorLine2="                                                                                                                                                                                                                                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_main.xml"
+            line="2"
+            column="262"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        message="Possible overdraw: Root element paints background `#173653` with a theme that also paints a background (inferred theme is `@style/Theme.HospitalDetails`)"
+        errorLine1="    android:background=&quot;#173653&quot;>"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_splash.xml"
+            line="7"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        message="Possible overdraw: Root element paints background `@color/uhc_background` with a theme that also paints a background (inferred theme is `@style/Theme.HospitalDetails`)"
+        errorLine1="&lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;match_parent&quot; android:orientation=&quot;vertical&quot; android:background=&quot;@color/uhc_background&quot;>"
+        errorLine2="                                                                                                                                                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout-sw600dp/fragment_patient_detail.xml"
+            line="2"
+            column="178"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        message="Possible overdraw: Root element paints background `@color/uhc_background` with a theme that also paints a background (inferred theme is `@style/Theme.HospitalDetails`)"
+        errorLine1="&lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;match_parent&quot; android:orientation=&quot;vertical&quot; android:background=&quot;@color/uhc_background&quot;>"
+        errorLine2="                                                                                                                                                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_patient_detail.xml"
+            line="2"
+            column="178"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        message="Possible overdraw: Root element paints background `@color/uhc_background` with a theme that also paints a background (inferred theme is `@style/Theme.HospitalDetails`)"
+        errorLine1="&lt;ScrollView xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;match_parent&quot; android:background=&quot;@color/uhc_background&quot; android:fillViewport=&quot;true&quot;>"
+        errorLine2="                                                                                                                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout-sw600dp/fragment_patient_list.xml"
+            line="2"
+            column="145"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        message="Possible overdraw: Root element paints background `@color/uhc_background` with a theme that also paints a background (inferred theme is `@style/Theme.HospitalDetails`)"
+        errorLine1="&lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;match_parent&quot; android:orientation=&quot;vertical&quot; android:background=&quot;@color/uhc_background&quot;>"
+        errorLine2="                                                                                                                                                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_patient_list.xml"
+            line="2"
+            column="178"/>
+    </issue>
+
+    <issue
+        id="Overdraw"
+        message="Possible overdraw: Root element paints background `@color/uhc_navy` with a theme that also paints a background (inferred theme is `@style/Theme.HospitalDetails`)"
+        errorLine1="&lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;wrap_content&quot; android:orientation=&quot;vertical&quot; android:background=&quot;@color/uhc_navy&quot; android:paddingStart=&quot;22dp&quot; android:paddingEnd=&quot;22dp&quot; android:paddingTop=&quot;18dp&quot; android:paddingBottom=&quot;17dp&quot;>"
+        errorLine2="                                                                                                                                                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/uhc_header.xml"
+            line="2"
+            column="178"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.amina_nakato` appears to be unused">
+        <location
+            file="src/main/res/drawable-nodpi/amina_nakato.jpg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.black` appears to be unused"
+        errorLine1="    &lt;color name=&quot;black&quot;>#FF000000&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="3"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.white` appears to be unused"
+        errorLine1="    &lt;color name=&quot;white&quot;>#FFFFFFFF&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="4"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.uhc_green_bg` appears to be unused"
+        errorLine1="    &lt;color name=&quot;uhc_green_bg&quot;>#DDF4E8&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="12"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.john_okello` appears to be unused">
+        <location
+            file="src/main/res/drawable-nodpi/john_okello.jpg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.patient_card` appears to be unused"
+        errorLine1="&lt;shape xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="src/main/res/drawable/patient_card.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.sarah_namusoke` appears to be unused">
+        <location
+            file="src/main/res/drawable-nodpi/sarah_namusoke.jpg"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.patient_directory` appears to be unused"
+        errorLine1="    &lt;string name=&quot;patient_directory&quot;>Patient directory&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="7"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.patient_record` appears to be unused"
+        errorLine1="    &lt;string name=&quot;patient_record&quot;>Patient record&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="8"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.search_hint` appears to be unused"
+        errorLine1="    &lt;string name=&quot;search_hint&quot;>Search name or patient ID&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="9"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UselessParent"
+        message="This `ScrollView` layout or its `LinearLayout` parent is unnecessary; transfer the `background` attribute to the other view"
+        errorLine1=" &lt;ScrollView android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;match_parent&quot; android:fillViewport=&quot;true&quot;>"
+        errorLine2="  ~~~~~~~~~~">
+        <location
+            file="src/main/res/layout-sw600dp/fragment_patient_detail.xml"
+            line="3"
+            column="3"/>
+    </issue>
+
+    <issue
+        id="SmallSp"
+        message="Avoid using sizes smaller than `11sp`: `10sp`"
+        errorLine1=" &lt;TextView android:layout_width=&quot;wrap_content&quot; android:layout_height=&quot;wrap_content&quot; android:text=&quot;UGANDA HEALTH CONNECT&quot; android:textColor=&quot;#E8EEF4&quot; android:textStyle=&quot;bold&quot; android:textSize=&quot;10sp&quot; android:letterSpacing=&quot;0.04&quot;/>"
+        errorLine2="                                                                                                                                                                              ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/uhc_header.xml"
+            line="4"
+            column="175"/>
+    </issue>
+
+    <issue
+        id="Autofill"
+        message="Missing `autofillHints` attribute"
+        errorLine1="  &lt;EditText android:id=&quot;@+id/search_field&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;46dp&quot; android:layout_marginTop=&quot;14dp&quot; android:paddingStart=&quot;12dp&quot; android:paddingEnd=&quot;12dp&quot; android:background=&quot;@drawable/uhc_search&quot; android:hint=&quot;Search name or patient ID&quot; android:singleLine=&quot;true&quot; android:inputType=&quot;text&quot; android:textColor=&quot;@color/uhc_text&quot; android:textColorHint=&quot;@color/uhc_muted&quot; android:textSize=&quot;13sp&quot;/>"
+        errorLine2="   ~~~~~~~~">
+        <location
+            file="src/main/res/layout-sw600dp/fragment_patient_list.xml"
+            line="5"
+            column="4"/>
+    </issue>
+
+    <issue
+        id="Autofill"
+        message="Missing `autofillHints` attribute"
+        errorLine1="   &lt;EditText android:id=&quot;@+id/search_field&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;52dp&quot; android:layout_marginTop=&quot;22dp&quot; android:paddingStart=&quot;16dp&quot; android:paddingEnd=&quot;16dp&quot; android:background=&quot;@drawable/uhc_search&quot; android:hint=&quot;Search name or patient ID&quot; android:singleLine=&quot;true&quot; android:inputType=&quot;text&quot; android:textColor=&quot;@color/uhc_text&quot; android:textColorHint=&quot;@color/uhc_muted&quot; android:textSize=&quot;14sp&quot;/>"
+        errorLine2="    ~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_patient_list.xml"
+            line="8"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="UseTomlInstead"
+        message="Use version catalog instead"
+        errorLine1="    implementation(&quot;androidx.lifecycle:lifecycle-viewmodel:2.9.0&quot;)"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle.kts"
+            line="66"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="UseTomlInstead"
+        message="Use version catalog instead"
+        errorLine1="    implementation(&quot;androidx.lifecycle:lifecycle-livedata:2.9.0&quot;)"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle.kts"
+            line="67"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="SetTextI18n"
+        message="String literal in `setText` can not be translated. Use Android resources instead."
+        errorLine1="            ((TextView) view.findViewById(R.id.detail_name)).setText(&quot;Patient not found&quot;);"
+        errorLine2="                                                                     ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/hospitaldetails/PatientDetailFragment.java"
+            line="44"
+            column="70"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Sarah Namusoke&quot;, should use `@string` resource"
+        errorLine1="     &lt;TextView android:id=&quot;@+id/detail_name&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;wrap_content&quot; android:text=&quot;Sarah Namusoke&quot; android:textColor=&quot;@color/uhc_text&quot; android:textSize=&quot;25sp&quot; android:textStyle=&quot;bold&quot;/>"
+        errorLine2="                                                                                                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout-sw600dp/fragment_patient_detail.xml"
+            line="7"
+            column="119"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Patient ID: UHC-001  ·  Female, 34 years&quot;, should use `@string` resource"
+        errorLine1="     &lt;TextView android:id=&quot;@+id/detail_meta&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;wrap_content&quot; android:layout_marginTop=&quot;4dp&quot; android:text=&quot;Patient ID: UHC-001  ·  Female, 34 years&quot; android:textColor=&quot;@color/uhc_muted&quot; android:textSize=&quot;13sp&quot;/>"
+        errorLine2="                                                                                                                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout-sw600dp/fragment_patient_detail.xml"
+            line="8"
+            column="150"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Sarah Namusoke&quot;, should use `@string` resource"
+        errorLine1="     &lt;TextView android:id=&quot;@+id/detail_name&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;wrap_content&quot; android:text=&quot;Sarah Namusoke&quot; android:textColor=&quot;@color/uhc_text&quot; android:textSize=&quot;25sp&quot; android:textStyle=&quot;bold&quot;/>"
+        errorLine2="                                                                                                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_patient_detail.xml"
+            line="8"
+            column="119"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Patient ID: UHC-001  ·  Female, 34 years&quot;, should use `@string` resource"
+        errorLine1="     &lt;TextView android:id=&quot;@+id/detail_meta&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;wrap_content&quot; android:layout_marginTop=&quot;4dp&quot; android:text=&quot;Patient ID: UHC-001  ·  Female, 34 years&quot; android:textColor=&quot;@color/uhc_muted&quot; android:textSize=&quot;13sp&quot;/>"
+        errorLine2="                                                                                                                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_patient_detail.xml"
+            line="9"
+            column="150"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Patient portrait&quot;, should use `@string` resource"
+        errorLine1="    &lt;ImageView android:id=&quot;@+id/detail_photo&quot; android:layout_width=&quot;88dp&quot; android:layout_height=&quot;88dp&quot; android:layout_marginStart=&quot;12dp&quot; android:background=&quot;@drawable/uhc_avatar_outline&quot; android:clipToOutline=&quot;true&quot; android:scaleType=&quot;centerCrop&quot; android:contentDescription=&quot;Patient portrait&quot;/>"
+        errorLine2="                                                                                                                                                                                                                                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout-sw600dp/fragment_patient_detail.xml"
+            line="10"
+            column="248"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Patient portrait&quot;, should use `@string` resource"
+        errorLine1="    &lt;ImageView android:id=&quot;@+id/detail_photo&quot; android:layout_width=&quot;88dp&quot; android:layout_height=&quot;88dp&quot; android:layout_marginStart=&quot;12dp&quot; android:background=&quot;@drawable/uhc_avatar_outline&quot; android:clipToOutline=&quot;true&quot; android:scaleType=&quot;centerCrop&quot; android:contentDescription=&quot;Patient portrait&quot;/>"
+        errorLine2="                                                                                                                                                                                                                                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_patient_detail.xml"
+            line="11"
+            column="248"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;ACTIVE RECORD&quot;, should use `@string` resource"
+        errorLine1="   &lt;TextView android:id=&quot;@+id/detail_status&quot; android:layout_width=&quot;150dp&quot; android:layout_height=&quot;34dp&quot; android:layout_marginTop=&quot;16dp&quot; android:gravity=&quot;center_vertical&quot; android:paddingStart=&quot;16dp&quot; android:background=&quot;@drawable/uhc_status&quot; android:text=&quot;ACTIVE RECORD&quot; android:textColor=&quot;@color/uhc_green&quot; android:textStyle=&quot;bold&quot; android:textSize=&quot;12sp&quot;/>"
+        errorLine2="                                                                                                                                                                                                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout-sw600dp/fragment_patient_detail.xml"
+            line="12"
+            column="240"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;ACTIVE RECORD&quot;, should use `@string` resource"
+        errorLine1="   &lt;TextView android:id=&quot;@+id/detail_status&quot; android:layout_width=&quot;150dp&quot; android:layout_height=&quot;34dp&quot; android:layout_marginTop=&quot;16dp&quot; android:gravity=&quot;center_vertical&quot; android:paddingStart=&quot;16dp&quot; android:background=&quot;@drawable/uhc_status&quot; android:text=&quot;ACTIVE RECORD&quot; android:textColor=&quot;@color/uhc_green&quot; android:textStyle=&quot;bold&quot; android:textSize=&quot;12sp&quot;/>"
+        errorLine2="                                                                                                                                                                                                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_patient_detail.xml"
+            line="13"
+            column="240"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;PATIENT SUMMARY&quot;, should use `@string` resource"
+        errorLine1="   &lt;TextView android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;wrap_content&quot; android:layout_marginTop=&quot;26dp&quot; android:text=&quot;PATIENT SUMMARY&quot; android:textColor=&quot;@color/uhc_text&quot; android:textSize=&quot;14sp&quot; android:textStyle=&quot;bold&quot;/>"
+        errorLine2="                                                                                                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout-sw600dp/fragment_patient_detail.xml"
+            line="13"
+            column="119"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;PATIENT SUMMARY&quot;, should use `@string` resource"
+        errorLine1="   &lt;TextView android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;wrap_content&quot; android:layout_marginTop=&quot;26dp&quot; android:text=&quot;PATIENT SUMMARY&quot; android:textColor=&quot;@color/uhc_text&quot; android:textSize=&quot;14sp&quot; android:textStyle=&quot;bold&quot;/>"
+        errorLine2="                                                                                                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_patient_detail.xml"
+            line="14"
+            column="119"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Blood group&quot;, should use `@string` resource"
+        errorLine1="    &lt;LinearLayout android:layout_width=&quot;0dp&quot; android:layout_height=&quot;wrap_content&quot; android:layout_weight=&quot;1&quot; android:orientation=&quot;vertical&quot;>&lt;TextView android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;wrap_content&quot; android:text=&quot;Blood group&quot; android:textColor=&quot;@color/uhc_muted&quot; android:textSize=&quot;12sp&quot;/>&lt;TextView android:id=&quot;@+id/detail_blood_group&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;wrap_content&quot; android:layout_marginTop=&quot;6dp&quot; android:text=&quot;O+&quot; android:textColor=&quot;@color/uhc_text&quot; android:textStyle=&quot;bold&quot; android:textSize=&quot;16sp&quot;/>&lt;/LinearLayout>"
+        errorLine2="                                                                                                                                                                                                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout-sw600dp/fragment_patient_detail.xml"
+            line="15"
+            column="223"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;O+&quot;, should use `@string` resource"
+        errorLine1="    &lt;LinearLayout android:layout_width=&quot;0dp&quot; android:layout_height=&quot;wrap_content&quot; android:layout_weight=&quot;1&quot; android:orientation=&quot;vertical&quot;>&lt;TextView android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;wrap_content&quot; android:text=&quot;Blood group&quot; android:textColor=&quot;@color/uhc_muted&quot; android:textSize=&quot;12sp&quot;/>&lt;TextView android:id=&quot;@+id/detail_blood_group&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;wrap_content&quot; android:layout_marginTop=&quot;6dp&quot; android:text=&quot;O+&quot; android:textColor=&quot;@color/uhc_text&quot; android:textStyle=&quot;bold&quot; android:textSize=&quot;16sp&quot;/>&lt;/LinearLayout>"
+        errorLine2="                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout-sw600dp/fragment_patient_detail.xml"
+            line="15"
+            column="463"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;12 Oct 2026&quot;, should use `@string` resource"
+        errorLine1="    &lt;LinearLayout android:layout_width=&quot;0dp&quot; android:layout_height=&quot;wrap_content&quot; android:layout_weight=&quot;1&quot; android:orientation=&quot;vertical&quot;>&lt;TextView android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;wrap_content&quot; android:text=&quot;Last visit&quot; android:textColor=&quot;@color/uhc_muted&quot; android:textSize=&quot;12sp&quot;/>&lt;TextView android:id=&quot;@+id/detail_last_visit&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;wrap_content&quot; android:layout_marginTop=&quot;6dp&quot; android:text=&quot;12 Oct 2026&quot; android:textColor=&quot;@color/uhc_text&quot; android:textStyle=&quot;bold&quot; android:textSize=&quot;16sp&quot;/>&lt;/LinearLayout>"
+        errorLine2="                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout-sw600dp/fragment_patient_detail.xml"
+            line="16"
+            column="461"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Blood group&quot;, should use `@string` resource"
+        errorLine1="    &lt;LinearLayout android:layout_width=&quot;0dp&quot; android:layout_height=&quot;wrap_content&quot; android:layout_weight=&quot;1&quot; android:orientation=&quot;vertical&quot;>&lt;TextView android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;wrap_content&quot; android:text=&quot;Blood group&quot; android:textColor=&quot;@color/uhc_muted&quot; android:textSize=&quot;12sp&quot;/>&lt;TextView android:id=&quot;@+id/detail_blood_group&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;wrap_content&quot; android:layout_marginTop=&quot;6dp&quot; android:text=&quot;O+&quot; android:textColor=&quot;@color/uhc_text&quot; android:textStyle=&quot;bold&quot; android:textSize=&quot;16sp&quot;/>&lt;/LinearLayout>"
+        errorLine2="                                                                                                                                                                                                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_patient_detail.xml"
+            line="16"
+            column="223"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Last visit&quot;, should use `@string` resource"
+        errorLine1="    &lt;LinearLayout android:layout_width=&quot;0dp&quot; android:layout_height=&quot;wrap_content&quot; android:layout_weight=&quot;1&quot; android:orientation=&quot;vertical&quot;>&lt;TextView android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;wrap_content&quot; android:text=&quot;Last visit&quot; android:textColor=&quot;@color/uhc_muted&quot; android:textSize=&quot;12sp&quot;/>&lt;TextView android:id=&quot;@+id/detail_last_visit&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;wrap_content&quot; android:layout_marginTop=&quot;6dp&quot; android:text=&quot;12 Oct 2026&quot; android:textColor=&quot;@color/uhc_text&quot; android:textStyle=&quot;bold&quot; android:textSize=&quot;16sp&quot;/>&lt;/LinearLayout>"
+        errorLine2="                                                                                                                                                                                                                              ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout-sw600dp/fragment_patient_detail.xml"
+            line="16"
+            column="223"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;O+&quot;, should use `@string` resource"
+        errorLine1="    &lt;LinearLayout android:layout_width=&quot;0dp&quot; android:layout_height=&quot;wrap_content&quot; android:layout_weight=&quot;1&quot; android:orientation=&quot;vertical&quot;>&lt;TextView android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;wrap_content&quot; android:text=&quot;Blood group&quot; android:textColor=&quot;@color/uhc_muted&quot; android:textSize=&quot;12sp&quot;/>&lt;TextView android:id=&quot;@+id/detail_blood_group&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;wrap_content&quot; android:layout_marginTop=&quot;6dp&quot; android:text=&quot;O+&quot; android:textColor=&quot;@color/uhc_text&quot; android:textStyle=&quot;bold&quot; android:textSize=&quot;16sp&quot;/>&lt;/LinearLayout>"
+        errorLine2="                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_patient_detail.xml"
+            line="16"
+            column="463"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;12 Oct 2026&quot;, should use `@string` resource"
+        errorLine1="    &lt;LinearLayout android:layout_width=&quot;0dp&quot; android:layout_height=&quot;wrap_content&quot; android:layout_weight=&quot;1&quot; android:orientation=&quot;vertical&quot;>&lt;TextView android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;wrap_content&quot; android:text=&quot;Last visit&quot; android:textColor=&quot;@color/uhc_muted&quot; android:textSize=&quot;12sp&quot;/>&lt;TextView android:id=&quot;@+id/detail_last_visit&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;wrap_content&quot; android:layout_marginTop=&quot;6dp&quot; android:text=&quot;12 Oct 2026&quot; android:textColor=&quot;@color/uhc_text&quot; android:textStyle=&quot;bold&quot; android:textSize=&quot;16sp&quot;/>&lt;/LinearLayout>"
+        errorLine2="                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_patient_detail.xml"
+            line="17"
+            column="461"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Last visit&quot;, should use `@string` resource"
+        errorLine1="    &lt;LinearLayout android:layout_width=&quot;0dp&quot; android:layout_height=&quot;wrap_content&quot; android:layout_weight=&quot;1&quot; android:orientation=&quot;vertical&quot;>&lt;TextView android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;wrap_content&quot; android:text=&quot;Last visit&quot; android:textColor=&quot;@color/uhc_muted&quot; android:textSize=&quot;12sp&quot;/>&lt;TextView android:id=&quot;@+id/detail_last_visit&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;wrap_content&quot; android:layout_marginTop=&quot;6dp&quot; android:text=&quot;12 Oct 2026&quot; android:textColor=&quot;@color/uhc_text&quot; android:textStyle=&quot;bold&quot; android:textSize=&quot;16sp&quot;/>&lt;/LinearLayout>"
+        errorLine2="                                                                                                                                                                                                                              ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_patient_detail.xml"
+            line="17"
+            column="223"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;VIEW FULL MEDICAL HISTORY&quot;, should use `@string` resource"
+        errorLine1="   &lt;TextView android:id=&quot;@+id/detail_full_history&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;54dp&quot; android:layout_marginTop=&quot;26dp&quot; android:gravity=&quot;center&quot; android:background=&quot;@drawable/uhc_button&quot; android:text=&quot;VIEW FULL MEDICAL HISTORY&quot; android:textColor=&quot;#FFFFFF&quot; android:textStyle=&quot;bold&quot; android:textSize=&quot;13sp&quot;/>"
+        errorLine2="                                                                                                                                                                                                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout-sw600dp/fragment_patient_detail.xml"
+            line="22"
+            column="216"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;VIEW FULL MEDICAL HISTORY&quot;, should use `@string` resource"
+        errorLine1="   &lt;TextView android:id=&quot;@+id/detail_full_history&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;54dp&quot; android:layout_marginTop=&quot;26dp&quot; android:gravity=&quot;center&quot; android:background=&quot;@drawable/uhc_button&quot; android:text=&quot;VIEW FULL MEDICAL HISTORY&quot; android:textColor=&quot;#FFFFFF&quot; android:textStyle=&quot;bold&quot; android:textSize=&quot;13sp&quot;/>"
+        errorLine2="                                                                                                                                                                                                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_patient_detail.xml"
+            line="23"
+            column="216"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Patients&quot;, should use `@string` resource"
+        errorLine1="  &lt;TextView android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;wrap_content&quot; android:text=&quot;Patients&quot; android:textColor=&quot;@color/uhc_text&quot; android:textSize=&quot;22sp&quot; android:textStyle=&quot;bold&quot;/>"
+        errorLine2="                                                                                     ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout-sw600dp/fragment_patient_list.xml"
+            line="4"
+            column="86"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Search name or patient ID&quot;, should use `@string` resource"
+        errorLine1="  &lt;EditText android:id=&quot;@+id/search_field&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;46dp&quot; android:layout_marginTop=&quot;14dp&quot; android:paddingStart=&quot;12dp&quot; android:paddingEnd=&quot;12dp&quot; android:background=&quot;@drawable/uhc_search&quot; android:hint=&quot;Search name or patient ID&quot; android:singleLine=&quot;true&quot; android:inputType=&quot;text&quot; android:textColor=&quot;@color/uhc_text&quot; android:textColorHint=&quot;@color/uhc_muted&quot; android:textSize=&quot;13sp&quot;/>"
+        errorLine2="                                                                                                                                                                                                                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout-sw600dp/fragment_patient_list.xml"
+            line="5"
+            column="237"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Patient directory&quot;, should use `@string` resource"
+        errorLine1="   &lt;TextView android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;wrap_content&quot; android:text=&quot;Patient directory&quot; android:textColor=&quot;@color/uhc_text&quot; android:textSize=&quot;25sp&quot; android:textStyle=&quot;bold&quot;/>"
+        errorLine2="                                                                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_patient_list.xml"
+            line="6"
+            column="87"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Search and select a patient to view their record.&quot;, should use `@string` resource"
+        errorLine1="   &lt;TextView android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;wrap_content&quot; android:layout_marginTop=&quot;4dp&quot; android:text=&quot;Search and select a patient to view their record.&quot; android:textColor=&quot;@color/uhc_muted&quot; android:textSize=&quot;14sp&quot;/>"
+        errorLine2="                                                                                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_patient_list.xml"
+            line="7"
+            column="118"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Search name or patient ID&quot;, should use `@string` resource"
+        errorLine1="   &lt;EditText android:id=&quot;@+id/search_field&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;52dp&quot; android:layout_marginTop=&quot;22dp&quot; android:paddingStart=&quot;16dp&quot; android:paddingEnd=&quot;16dp&quot; android:background=&quot;@drawable/uhc_search&quot; android:hint=&quot;Search name or patient ID&quot; android:singleLine=&quot;true&quot; android:inputType=&quot;text&quot; android:textColor=&quot;@color/uhc_text&quot; android:textColorHint=&quot;@color/uhc_muted&quot; android:textSize=&quot;14sp&quot;/>"
+        errorLine2="                                                                                                                                                                                                                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_patient_list.xml"
+            line="8"
+            column="238"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;3 RECENT PATIENTS&quot;, should use `@string` resource"
+        errorLine1="      android:text=&quot;3 RECENT PATIENTS&quot;"
+        errorLine2="      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout-sw600dp/fragment_patient_list.xml"
+            line="12"
+            column="7"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;RECENT PATIENTS  ·  3 RECORDS&quot;, should use `@string` resource"
+        errorLine1="       android:text=&quot;RECENT PATIENTS  ·  3 RECORDS&quot;"
+        errorLine2="       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_patient_list.xml"
+            line="15"
+            column="8"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Patients&quot;, should use `@string` resource"
+        errorLine1="  &lt;TextView android:layout_width=&quot;0dp&quot; android:layout_height=&quot;match_parent&quot; android:layout_weight=&quot;1&quot; android:gravity=&quot;center&quot; android:text=&quot;Patients&quot; android:textColor=&quot;@color/uhc_navy&quot; android:textStyle=&quot;bold&quot; android:textSize=&quot;13sp&quot;/>"
+        errorLine2="                                                                                                                               ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_patient_list.xml"
+            line="23"
+            column="128"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Visits&quot;, should use `@string` resource"
+        errorLine1="  &lt;TextView android:layout_width=&quot;0dp&quot; android:layout_height=&quot;match_parent&quot; android:layout_weight=&quot;1&quot; android:gravity=&quot;center&quot; android:text=&quot;Visits&quot; android:textColor=&quot;@color/uhc_muted&quot; android:textSize=&quot;13sp&quot;/>"
+        errorLine2="                                                                                                                               ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_patient_list.xml"
+            line="24"
+            column="128"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Profile&quot;, should use `@string` resource"
+        errorLine1="  &lt;TextView android:layout_width=&quot;0dp&quot; android:layout_height=&quot;match_parent&quot; android:layout_weight=&quot;1&quot; android:gravity=&quot;center&quot; android:text=&quot;Profile&quot; android:textColor=&quot;@color/uhc_muted&quot; android:textSize=&quot;13sp&quot;/>"
+        errorLine2="                                                                                                                               ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_patient_list.xml"
+            line="25"
+            column="128"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Patient portrait&quot;, should use `@string` resource"
+        errorLine1="  &lt;ImageView android:id=&quot;@+id/patient_photo&quot; android:layout_width=&quot;48dp&quot; android:layout_height=&quot;48dp&quot; android:scaleType=&quot;centerCrop&quot; android:contentDescription=&quot;Patient portrait&quot; android:background=&quot;@drawable/uhc_avatar_outline&quot; android:clipToOutline=&quot;true&quot;/>"
+        errorLine2="                                                                                                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/item_patient.xml"
+            line="4"
+            column="134"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Sarah Namusoke&quot;, should use `@string` resource"
+        errorLine1="   &lt;TextView android:id=&quot;@+id/patient_name&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;wrap_content&quot; android:text=&quot;Sarah Namusoke&quot; android:textColor=&quot;@color/uhc_text&quot; android:textStyle=&quot;bold&quot; android:textSize=&quot;20sp&quot;/>"
+        errorLine2="                                                                                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/item_patient.xml"
+            line="6"
+            column="118"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;34 years  ·  F&quot;, should use `@string` resource"
+        errorLine1="   &lt;TextView android:id=&quot;@+id/patient_demographics&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;wrap_content&quot; android:layout_marginTop=&quot;3dp&quot; android:text=&quot;34 years  ·  F&quot; android:textColor=&quot;@color/uhc_muted&quot; android:textSize=&quot;13sp&quot;/>"
+        errorLine2="                                                                                                                                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/item_patient.xml"
+            line="7"
+            column="157"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;UHC-001&quot;, should use `@string` resource"
+        errorLine1="  &lt;TextView android:id=&quot;@+id/patient_id&quot; android:layout_width=&quot;wrap_content&quot; android:layout_height=&quot;wrap_content&quot; android:text=&quot;UHC-001&quot; android:textColor=&quot;@color/uhc_muted&quot; android:textSize=&quot;12sp&quot;/>"
+        errorLine2="                                                                                                                  ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/item_patient.xml"
+            line="9"
+            column="115"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Hypertension follow-up&quot;, should use `@string` resource"
+        errorLine1=" &lt;TextView android:id=&quot;@+id/patient_reason&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;wrap_content&quot; android:layout_marginTop=&quot;12dp&quot; android:text=&quot;Hypertension follow-up&quot; android:textColor=&quot;@color/uhc_muted&quot; android:textSize=&quot;13sp&quot;/>"
+        errorLine2="                                                                                                                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/item_patient.xml"
+            line="11"
+            column="150"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Allergies&quot;, should use `@string` resource"
+        errorLine1=" &lt;TextView android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;wrap_content&quot; android:text=&quot;Allergies&quot; android:textColor=&quot;@color/uhc_text&quot; android:textSize=&quot;16sp&quot; android:textStyle=&quot;bold&quot;/>"
+        errorLine2="                                                                                    ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/section_allergies.xml"
+            line="3"
+            column="85"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;No known allergies recorded&quot;, should use `@string` resource"
+        errorLine1=" &lt;TextView android:id=&quot;@+id/detail_allergies&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;wrap_content&quot; android:layout_marginTop=&quot;9dp&quot; android:text=&quot;No known allergies recorded&quot; android:textColor=&quot;@color/uhc_muted&quot; android:textSize=&quot;13sp&quot;/>"
+        errorLine2="                                                                                                                                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/section_allergies.xml"
+            line="5"
+            column="151"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Medical history&quot;, should use `@string` resource"
+        errorLine1=" &lt;TextView android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;wrap_content&quot; android:text=&quot;Medical history&quot; android:textColor=&quot;@color/uhc_text&quot; android:textSize=&quot;16sp&quot; android:textStyle=&quot;bold&quot;/>"
+        errorLine2="                                                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/section_medical_history.xml"
+            line="3"
+            column="85"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Hypertension — diagnosed 2023 Follow-up scheduled with clinician&quot;, should use `@string` resource"
+        errorLine1=" &lt;TextView android:id=&quot;@+id/detail_condition&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;wrap_content&quot; android:layout_marginTop=&quot;9dp&quot; android:text=&quot;Hypertension — diagnosed 2023"
+        errorLine2="                                                                                                                                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/section_medical_history.xml"
+            line="5"
+            column="151"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Current medications&quot;, should use `@string` resource"
+        errorLine1=" &lt;TextView android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;wrap_content&quot; android:text=&quot;Current medications&quot; android:textColor=&quot;@color/uhc_text&quot; android:textSize=&quot;16sp&quot; android:textStyle=&quot;bold&quot;/>"
+        errorLine2="                                                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/section_medications.xml"
+            line="3"
+            column="85"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Amlodipine — dosage per prescription Medication review required&quot;, should use `@string` resource"
+        errorLine1=" &lt;TextView android:id=&quot;@+id/detail_phone&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;wrap_content&quot; android:layout_marginTop=&quot;9dp&quot; android:text=&quot;Amlodipine — dosage per prescription"
+        errorLine2="                                                                                                                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/section_medications.xml"
+            line="5"
+            column="147"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Latest vital signs&quot;, should use `@string` resource"
+        errorLine1=" &lt;TextView android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;wrap_content&quot; android:text=&quot;Latest vital signs&quot; android:textColor=&quot;@color/uhc_text&quot; android:textSize=&quot;16sp&quot; android:textStyle=&quot;bold&quot;/>"
+        errorLine2="                                                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/section_vitals.xml"
+            line="3"
+            column="85"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;Blood pressure: 138/88 mmHg Pulse: 78 bpm  ·  Temperature: 36.8 °C&quot;, should use `@string` resource"
+        errorLine1=" &lt;TextView android:id=&quot;@+id/detail_vitals&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;wrap_content&quot; android:layout_marginTop=&quot;9dp&quot; android:text=&quot;Blood pressure: 138/88 mmHg"
+        errorLine2="                                                                                                                                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/section_vitals.xml"
+            line="5"
+            column="148"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;UHC&quot;, should use `@string` resource"
+        errorLine1=" &lt;TextView android:layout_width=&quot;wrap_content&quot; android:layout_height=&quot;wrap_content&quot; android:text=&quot;UHC&quot; android:textColor=&quot;@android:color/white&quot; android:textStyle=&quot;bold&quot; android:textSize=&quot;22sp&quot;/>"
+        errorLine2="                                                                                    ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/uhc_header.xml"
+            line="3"
+            column="85"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        message="Hardcoded string &quot;UGANDA HEALTH CONNECT&quot;, should use `@string` resource"
+        errorLine1=" &lt;TextView android:layout_width=&quot;wrap_content&quot; android:layout_height=&quot;wrap_content&quot; android:text=&quot;UGANDA HEALTH CONNECT&quot; android:textColor=&quot;#E8EEF4&quot; android:textStyle=&quot;bold&quot; android:textSize=&quot;10sp&quot; android:letterSpacing=&quot;0.04&quot;/>"
+        errorLine2="                                                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/uhc_header.xml"
+            line="4"
+            column="85"/>
+    </issue>
+
+    <issue
+        id="RtlSymmetry"
+        message="When you define `paddingStart` you should probably also define `paddingEnd` for right-to-left symmetry"
+        errorLine1="   &lt;TextView android:id=&quot;@+id/detail_status&quot; android:layout_width=&quot;150dp&quot; android:layout_height=&quot;34dp&quot; android:layout_marginTop=&quot;16dp&quot; android:gravity=&quot;center_vertical&quot; android:paddingStart=&quot;16dp&quot; android:background=&quot;@drawable/uhc_status&quot; android:text=&quot;ACTIVE RECORD&quot; android:textColor=&quot;@color/uhc_green&quot; android:textStyle=&quot;bold&quot; android:textSize=&quot;12sp&quot;/>"
+        errorLine2="                                                                                                                                                                         ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout-sw600dp/fragment_patient_detail.xml"
+            line="12"
+            column="170"/>
+    </issue>
+
+    <issue
+        id="RtlSymmetry"
+        message="When you define `paddingStart` you should probably also define `paddingEnd` for right-to-left symmetry"
+        errorLine1="   &lt;TextView android:id=&quot;@+id/detail_status&quot; android:layout_width=&quot;150dp&quot; android:layout_height=&quot;34dp&quot; android:layout_marginTop=&quot;16dp&quot; android:gravity=&quot;center_vertical&quot; android:paddingStart=&quot;16dp&quot; android:background=&quot;@drawable/uhc_status&quot; android:text=&quot;ACTIVE RECORD&quot; android:textColor=&quot;@color/uhc_green&quot; android:textStyle=&quot;bold&quot; android:textSize=&quot;12sp&quot;/>"
+        errorLine2="                                                                                                                                                                         ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_patient_detail.xml"
+            line="13"
+            column="170"/>
+    </issue>
+
+</issues>

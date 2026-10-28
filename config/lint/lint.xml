@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  UHC Android Lint configuration.
+  Referenced from app/build.gradle.kts (lint { lintConfig = ... }).
+
+  Severity levels used:
+    fatal   - crashes the app at runtime; also blocks release builds (lintVitalRelease)
+    error   - fails ./gradlew lintDebug and the CI pipeline
+    warning - shown in reports, does not fail the build
+-->
+<lint>
+
+    <!-- ===== Invalid fragment transactions ===== -->
+    <!-- beginTransaction() without commit(): the transaction silently never runs -->
+    <issue id="CommitTransaction" severity="fatal" />
+    <!-- Custom: commit() after onSaveInstanceState() throws IllegalStateException -->
+    <issue id="UhcCommitAfterStateSaved" severity="fatal" />
+    <!-- detach() and attach() on the same fragment in one transaction does nothing -->
+    <issue id="DetachAndAttachSameFragment" severity="error" />
+
+    <!-- ===== NullPointerException from getActivity() / getContext() ===== -->
+    <!-- Custom: getActivity().x / getContext().x without a null check (Java) -->
+    <issue id="UhcUnsafeGetActivity" severity="error">
+        <ignore path="src/test/**" />
+        <ignore path="src/androidTest/**" />
+    </issue>
+    <!-- Built-in: getActivity()!! / requireNonNull(getActivity()) instead of requireActivity() -->
+    <issue id="UseRequireInsteadOfGet" severity="error" />
+
+    <!-- ===== View access after onDestroyView() ===== -->
+    <!-- Custom: View / ViewBinding fields not cleared in onDestroyView() -->
+    <issue id="UhcViewAccessAfterDestroyView" severity="fatal" />
+    <!-- Built-in: LiveData observed with `this` instead of getViewLifecycleOwner() -->
+    <issue id="FragmentLiveDataObserve" severity="error" />
+    <issue id="FragmentBackPressedCallback" severity="warning" />
+    <issue id="FragmentAddMenuProvider" severity="warning" />
+
+    <!-- ===== Fragment arguments / configuration changes ===== -->
+    <!-- Custom: getArguments().x without a null check; use requireArguments() -->
+    <issue id="UhcUnsafeGetArguments" severity="error">
+        <ignore path="src/test/**" />
+        <ignore path="src/androidTest/**" />
+    </issue>
+    <!-- Fragments must have a public no-arg constructor or they crash when
+         re-created after rotation / process death -->
+    <issue id="ValidFragment" severity="fatal" />
+
+    <!-- ===== Style ===== -->
+    <!-- Prefer FragmentContainerView over <fragment> tags -->
+    <issue id="FragmentTagUsage" severity="warning" />
+
+    <!-- Generated code is not ours to fix -->
+    <issue id="all">
+        <ignore path="**/build/generated/**" />
+    </issue>
+
+</lint>
