@@ -8,10 +8,13 @@
 
     <TextView
         android:id="@+id/txtLogo"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="145dp"
+        android:minWidth="200dp"
+        android:layout_marginBottom="24dp"
         android:background="@drawable/uhc_card"
         android:gravity="center"
+        android:padding="16dp"
         android:text="@string/brand_name"
         android:textColor="#173653"
         android:textSize="32sp"
@@ -20,18 +23,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed"
-        android:layout_marginBottom="24dp" />
+        app:layout_constraintVertical_chainStyle="packed" />
 
     <TextView
         android:id="@+id/txtAppName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:letterSpacing="0.05"
         android:text="@string/brand_subtitle"
         android:textColor="#FFFFFF"
         android:textSize="22sp"
         android:textStyle="bold"
-        android:letterSpacing="0.05"
         app:layout_constraintBottom_toTopOf="@id/txtTagline"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -41,10 +44,11 @@
         android:id="@+id/txtTagline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginBottom="32dp"
         android:text="@string/tagline"
         android:textColor="#DCEAF5"
         android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@id/splashProgress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/txtAppName" />
@@ -56,7 +60,7 @@
         android:layout_height="36dp"
         android:indeterminate="true"
         android:indeterminateTint="#FFFFFF"
-        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/txtTagline" />
